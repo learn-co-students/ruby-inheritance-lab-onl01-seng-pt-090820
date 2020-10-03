@@ -7,4 +7,8 @@ class Teacher < User
   def teach
     KNOWLEDGE.sample
   end
+
+  def knowledge
+    KNOWLEDGE
+  end
 end

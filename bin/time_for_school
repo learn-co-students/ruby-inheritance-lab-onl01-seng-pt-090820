@@ -12,9 +12,19 @@ avi = Teacher.new
 avi.first_name = "Avi"
 avi.last_name = "Flombaum"
 
+old_fart = Student.new
+old_fart.first_name = "Pierce"
 
-some_knowledge = avi.teach 
+until steve.knowledge.sort.uniq == avi.knowledge.sort 
+    some_knowledge = avi.teach
+    steve.learn(some_knowledge)
+end
 
-steve.learn(some_knowledge)
+3.times do
+    some_knowledge = avi.teach
+    old_fart.learn(some_knowledge)
+end
 
-puts "Steve just learned this important knowledge: '#{steve.knowledge.first}' from Avi"
+puts "Is Steve's knowledge = Avi's knowledge? #{steve.knowledge.sort.uniq == avi.knowledge.sort}"
+
+puts "What the students now know: #{old_fart.first_name} knows #{old_fart.knowledge}, while #{steve.first_name} knows #{steve.knowledge}."
